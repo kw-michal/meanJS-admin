@@ -1,0 +1,11 @@
+<section data-ng-controller="AdminpanelController" data-ng-init="listCollections()">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>List of collections</h1>
+            <a ng-repeat="c in collections" data-ng-href="#!/adminpanel/collections/{{c}}" class="collectionBox">
+                <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                <p>{{c}}</p>
+            </a>
+        </div>
+    </div>
+</section>

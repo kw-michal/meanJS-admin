@@ -1,0 +1,15 @@
+<section data-ng-controller="AdminpanelController" data-ng-init="showCollectionItem()">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>Show item</h1>
+            <br/>
+            
+            <div class="viewer">
+                <h3 ng-bind="'Object '+ items[0]._id"></h3>
+                <json-viewer edit="true" schemadefinition="schemadefinition" items="items"></json-viewer>
+            </div>
+
+
+        </div>
+    </div>
+</section>

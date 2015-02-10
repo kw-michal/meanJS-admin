@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
+.viewer {
+    border: 1px solid #555;
+    display: block;
+    width: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+}
+.viewer>h3 {
+    font-size: 24px;
+    width: 100;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px solid #555;
+    margin: 0;
+    font-weight: bold
+}
+.viewer .row {
+    border-bottom: 1px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*
+.viewer .row .array-row
+*/
+
+.viewer .row .array-row {
+    display: block;
+}
+.viewer .row .array-row a {
+    align-self: auto;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.viewer .row input {
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #444;
+    color: #333;
+    min-width: 250px;
+}
+.viewer .row .add {
+    color: red;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+.viewer .row>p {
+    font-style: italic;
+}
+.viewer .row:first-child {
+    margin-left: 0px;
+}
+.viewer .row .key {
+    display: block;
+    float: left;
+    width: 120px;
+    font-weight: bold;
+    padding-left: 10px;
+    height: 36px;
+    line-height: 36px;
+}
+.viewer .row .array {
+    color: #990000;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 10px;
+    display: block;
+    float: left;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.viewer .row .newObject {
+    display: block;
+    float: left;
+    width: 100%;
+    border-left: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 20px;
+    position: relative;
+}
+.viewer .row .index {
+    display: block;
+    float: left;
+    text-align: center;
+    min-width: 26px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    position: absolute;
+    left: -13px;
+    border: 1px solid #d5d5d5;
+    font-size: 12px;
+    font-style: normal;
+    cursor:pointer;
+}
+.viewer .array-row .row .remove {
+    display: block;
+    margin-left: 26px;
+    width: auto;
+    float: left;
+    display: block;
+    margin-top: 5px;
+}
+.viewer .row .button {
+    border: 1px solid;
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 13px;
+    margin-top: 15px;
+    text-transform: lowercase;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+.viewer .row .button:hover {
+    color: #000;
+    text-decoration: none;
+}
+.red {
+    border: 1px solid red;
+}
+.collectionBox {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #2c2c2c;
+    cursor: pointer;
+}
+.collectionBox>.glyphicon {
+    margin-top: 10px;
+    font-size: 48px;
+}
+.collectionBox>p {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}

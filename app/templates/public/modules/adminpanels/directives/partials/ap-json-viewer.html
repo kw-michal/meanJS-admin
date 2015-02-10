@@ -1,0 +1,28 @@
+<script type="text/ng-template" id="tree_item_renderer.html">
+
+    <div ng-if="!isArray(item.value)" class="row">
+        <div class="key">{{item.key}}:</div>
+        <p ng-show="!edit" ng-bind="item.value"></p>
+        <input type="text" ng-show="edit" ng-model="item.value"> </input>
+    </div>
+
+    <div ng-if="isArray(item.value)" class="row">
+        <div class="array-row">
+            <span ng-init="getDefinition(this,item.key); parentItem=item"></span>
+            <a class="array" ng-click="toggleChidren($event)">{{item.key}} [{{item.value.length}}]:</a>
+            <a class="add button" ng-click="add($event,item)">Add</a>
+            <div class="newObject row" ng-repeat="item in item.value">
+                <p class="index"  ng-click="toggleChidren($event)" ng-bind="$index+1"></p>
+                <a class="remove button" ng-click="remove(parentItem, $index)">remove</a>
+                <div ng-repeat="item in item.value" ng-include="'tree_item_renderer.html'">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</script>
+
+<div class="row" ng-repeat="item in items" ng-include="'tree_item_renderer.html'">
+
+</div>
+<button ng-click="save()">Save</button>

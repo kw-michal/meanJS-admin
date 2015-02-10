@@ -1,0 +1,12 @@
+<section data-ng-controller="AdminpanelController" data-ng-init="showCollection()">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>Collection items</h1>
+            <a ng-repeat="i in collectionItems" data-ng-href="#!/adminpanel/collections/{{collectionName}}/{{i._id}}" class="list-group-item">
+                <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                <p>{{i}}</p>
+            </a>
+        </div>
+    </div>
+</section>
+
