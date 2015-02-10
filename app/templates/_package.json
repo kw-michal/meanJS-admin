@@ -1,9 +1,0 @@
-{
-	"name": "meanJS-admin",
-	"version": "0.0.1",
-	"repository" :{ 
-		"type" : "git",
-		"url" : "https://github.com/kw-michal/meanJS-admin.git"
-	},
-	"dependencies": {}
-}
